@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  upload:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    volumes:
+      - upload-data:/mnt/data
+
+  nginx:
+    image: nginx
+    volumes:
+      - "./.nginx/config:/etc/nginx/conf.d"
+      - "upload-data:/mnt/data"
+    ports:
+      - "10000:10000"
+
+volumes:
+  upload-data:
+    driver: local
