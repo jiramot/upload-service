@@ -1,0 +1,8 @@
+upload/*
+node_modules/*
+test-results/*
+coverage/*
+npm-debug.log
+.vimrc.custom
+.idea/*
+dist/*
