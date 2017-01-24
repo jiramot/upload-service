@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-istanbul": "^0.11.0",
+    "babel-istanbul": "^0.12.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-es2017": "^6.16.0",
@@ -58,6 +58,6 @@
     "proxyquire": "^1.7.9",
     "rimraf": "^2.5.2",
     "supertest": "^2.0.1",
-    "yarn": "^0.17.9"
+    "yarn": "^0.19.1"
   }
 }
