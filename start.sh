@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /apps
+cd /apps/dist
 pm2 start app.js -i 2 --no-daemon

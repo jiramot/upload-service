@@ -6,7 +6,7 @@ import mkdirp from 'mkdirp'
 import moment from 'moment'
 import multer from 'multer'
 import path from 'path'
-import uuid from 'node-uuid'
+import uuid from 'uuid'
 import pify from 'pify'
 import { exec } from 'child-process-promise'
 

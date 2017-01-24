@@ -10,13 +10,13 @@ VOLUME ["/mnt/data"]
 
 ADD package.json /tmp/package.json
 RUN cd /tmp \
-    && npm install --production
+    && npm install
 RUN mkdir -p /apps \
     && cp -a /tmp/node_modules /apps
 
 WORKDIR /apps
 ADD . /apps
-ADD dist /apps
+RUN npm run build
 
 EXPOSE 3000
 ADD start.sh /start.sh
