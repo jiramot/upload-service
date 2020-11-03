@@ -6,3 +6,4 @@ npm-debug.log
 .vimrc.custom
 .idea/*
 dist/*
+package-lock.json
